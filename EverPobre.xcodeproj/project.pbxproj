@@ -12,6 +12,7 @@
 		6BA497DC1A8A9A260082234E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA497DB1A8A9A260082234E /* Images.xcassets */; };
 		6BA497DF1A8A9A260082234E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA497DD1A8A9A260082234E /* LaunchScreen.xib */; };
 		6BA497EB1A8A9A260082234E /* EverPobreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA497EA1A8A9A260082234E /* EverPobreTests.m */; };
+		6BA497F71A8A9A7A0082234E /* AGTSimpleCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA497F61A8A9A7A0082234E /* AGTSimpleCoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		6BA497E41A8A9A260082234E /* EverPobreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EverPobreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA497E91A8A9A260082234E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA497EA1A8A9A260082234E /* EverPobreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EverPobreTests.m; sourceTree = "<group>"; };
+		6BA497F51A8A9A7A0082234E /* AGTSimpleCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTSimpleCoreDataStack.h; sourceTree = "<group>"; };
+		6BA497F61A8A9A7A0082234E /* AGTSimpleCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTSimpleCoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,7 @@
 		6BA497D31A8A9A260082234E /* EverPobre */ = {
 			isa = PBXGroup;
 			children = (
+				6BA497F41A8A9A600082234E /* Models */,
 				6BA497D81A8A9A260082234E /* AppDelegate.h */,
 				6BA497D91A8A9A260082234E /* AppDelegate.m */,
 				6BA497DB1A8A9A260082234E /* Images.xcassets */,
@@ -109,6 +113,15 @@
 				6BA497E91A8A9A260082234E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BA497F41A8A9A600082234E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BA497F51A8A9A7A0082234E /* AGTSimpleCoreDataStack.h */,
+				6BA497F61A8A9A7A0082234E /* AGTSimpleCoreDataStack.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +225,7 @@
 			files = (
 				6BA497DA1A8A9A260082234E /* AppDelegate.m in Sources */,
 				6BA497D71A8A9A260082234E /* main.m in Sources */,
+				6BA497F71A8A9A7A0082234E /* AGTSimpleCoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +342,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EverPobre/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -338,8 +354,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EverPobre/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
