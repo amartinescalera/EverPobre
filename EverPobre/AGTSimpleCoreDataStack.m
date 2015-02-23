@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Agbo. All rights reserved.
 //
 
-
+@import CoreData;
 #import "AGTSimpleCoreDataStack.h"
 
 @interface AGTSimpleCoreDataStack ()

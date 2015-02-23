@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B5BA4F01A8D16D400E10142 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BA4EE1A8D16D400E10142 /* Model.xcdatamodeld */; };
 		6BA497D71A8A9A260082234E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA497D61A8A9A260082234E /* main.m */; };
 		6BA497DA1A8A9A260082234E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA497D91A8A9A260082234E /* AppDelegate.m */; };
 		6BA497DC1A8A9A260082234E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA497DB1A8A9A260082234E /* Images.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B5BA4EF1A8D16D400E10142 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		6BA497D11A8A9A260082234E /* EverPobre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverPobre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA497D51A8A9A260082234E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA497D61A8A9A260082234E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				6BA497F51A8A9A7A0082234E /* AGTSimpleCoreDataStack.h */,
 				6BA497F61A8A9A7A0082234E /* AGTSimpleCoreDataStack.m */,
+				6B5BA4EE1A8D16D400E10142 /* Model.xcdatamodeld */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				6BA497DA1A8A9A260082234E /* AppDelegate.m in Sources */,
 				6BA497D71A8A9A260082234E /* main.m in Sources */,
 				6BA497F71A8A9A7A0082234E /* AGTSimpleCoreDataStack.m in Sources */,
+				6B5BA4F01A8D16D400E10142 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +418,7 @@
 				6BA497F01A8A9A260082234E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BA497F11A8A9A260082234E /* Build configuration list for PBXNativeTarget "EverPobreTests" */ = {
 			isa = XCConfigurationList;
@@ -422,8 +427,22 @@
 				6BA497F31A8A9A260082234E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6B5BA4EE1A8D16D400E10142 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B5BA4EF1A8D16D400E10142 /* Model.xcdatamodel */,
+			);
+			currentVersion = 6B5BA4EF1A8D16D400E10142 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6BA497C91A8A9A260082234E /* Project object */;
 }
