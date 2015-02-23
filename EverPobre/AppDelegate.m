@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "AGTSimpleCoreDataStack.h"
+#import "Note.h"
+#import "Notebook.h"
 
 
 @interface AppDelegate ()
@@ -58,15 +60,18 @@
 
 -(void) trastearConDatos {
     
+    //Creamos una libreta
+    Notebook * nb = [Notebook notebookWithName:@"Mi Libreta" context:self.model.copy];
+    
     //Crear una nota
-    NSManagedObject *note = [NSEntityDescription insertNewObjectForEntityForName:@"Note"
+    Note *n = [NSEntityDescription insertNewObjectForEntityForName:@"Note"
                                                           inManagedObjectContext:self.model.context];
     
-    //Asignamos valores a las propiedades mediante KVC
-    [note setValue:@"WWWDC" forKey:@"name"];
-    [note setValue:[NSDate date] forKey:@"creationDate"];
+    n.creationDate = [NSDate date];
+    n.name = @"Hola Core Data";
     
-    NSLog(@"El nombre es %@", [note valueForKey:@"name"]);
+    //Añadimos una nota a la libreta
+    n.notebook = nb;
     
 }
 
