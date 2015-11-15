@@ -8,15 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6B5BA4F01A8D16D400E10142 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BA4EE1A8D16D400E10142 /* Model.xcdatamodeld */; };
-		6BA38A8B1A9BBD3B007D5391 /* Notebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA38A8A1A9BBD3B007D5391 /* Notebook.m */; };
-		6BA38A8E1A9BBD3C007D5391 /* NamedEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA38A8D1A9BBD3C007D5391 /* NamedEntity.m */; };
-		6BA38A911A9BBD3C007D5391 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA38A901A9BBD3C007D5391 /* Note.m */; };
 		6BA497D71A8A9A260082234E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA497D61A8A9A260082234E /* main.m */; };
 		6BA497DA1A8A9A260082234E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA497D91A8A9A260082234E /* AppDelegate.m */; };
 		6BA497DC1A8A9A260082234E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA497DB1A8A9A260082234E /* Images.xcassets */; };
 		6BA497DF1A8A9A260082234E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA497DD1A8A9A260082234E /* LaunchScreen.xib */; };
 		6BA497EB1A8A9A260082234E /* EverPobreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA497EA1A8A9A260082234E /* EverPobreTests.m */; };
 		6BA497F71A8A9A7A0082234E /* AGTSimpleCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA497F61A8A9A7A0082234E /* AGTSimpleCoreDataStack.m */; };
+		6BAFD0531A9D1F6B003089E2 /* _AMEHNamedEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAFD0481A9D1F6B003089E2 /* _AMEHNamedEntity.m */; };
+		6BAFD0541A9D1F6B003089E2 /* _AMEHNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAFD04A1A9D1F6B003089E2 /* _AMEHNote.m */; };
+		6BAFD0551A9D1F6B003089E2 /* _AMEHNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAFD04C1A9D1F6B003089E2 /* _AMEHNotebook.m */; };
+		6BAFD0561A9D1F6B003089E2 /* AMEHNamedEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAFD04E1A9D1F6B003089E2 /* AMEHNamedEntity.m */; };
+		6BAFD0571A9D1F6B003089E2 /* AMEHNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAFD0501A9D1F6B003089E2 /* AMEHNote.m */; };
+		6BAFD0581A9D1F6B003089E2 /* AMEHNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAFD0521A9D1F6B003089E2 /* AMEHNotebook.m */; };
+		6BAFD05D1A9D2598003089E2 /* _AMEHPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAFD05A1A9D2598003089E2 /* _AMEHPhoto.m */; };
+		6BAFD05E1A9D2598003089E2 /* AMEHPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAFD05C1A9D2598003089E2 /* AMEHPhoto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +36,6 @@
 
 /* Begin PBXFileReference section */
 		6B5BA4EF1A8D16D400E10142 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		6BA38A891A9BBD3B007D5391 /* Notebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notebook.h; sourceTree = "<group>"; };
-		6BA38A8A1A9BBD3B007D5391 /* Notebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notebook.m; sourceTree = "<group>"; };
-		6BA38A8C1A9BBD3C007D5391 /* NamedEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NamedEntity.h; sourceTree = "<group>"; };
-		6BA38A8D1A9BBD3C007D5391 /* NamedEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NamedEntity.m; sourceTree = "<group>"; };
-		6BA38A8F1A9BBD3C007D5391 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
-		6BA38A901A9BBD3C007D5391 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		6BA497D11A8A9A260082234E /* EverPobre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverPobre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA497D51A8A9A260082234E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA497D61A8A9A260082234E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +48,22 @@
 		6BA497EA1A8A9A260082234E /* EverPobreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EverPobreTests.m; sourceTree = "<group>"; };
 		6BA497F51A8A9A7A0082234E /* AGTSimpleCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTSimpleCoreDataStack.h; sourceTree = "<group>"; };
 		6BA497F61A8A9A7A0082234E /* AGTSimpleCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTSimpleCoreDataStack.m; sourceTree = "<group>"; };
+		6BAFD0471A9D1F6B003089E2 /* _AMEHNamedEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AMEHNamedEntity.h; sourceTree = "<group>"; };
+		6BAFD0481A9D1F6B003089E2 /* _AMEHNamedEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _AMEHNamedEntity.m; sourceTree = "<group>"; };
+		6BAFD0491A9D1F6B003089E2 /* _AMEHNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AMEHNote.h; sourceTree = "<group>"; };
+		6BAFD04A1A9D1F6B003089E2 /* _AMEHNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _AMEHNote.m; sourceTree = "<group>"; };
+		6BAFD04B1A9D1F6B003089E2 /* _AMEHNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AMEHNotebook.h; sourceTree = "<group>"; };
+		6BAFD04C1A9D1F6B003089E2 /* _AMEHNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _AMEHNotebook.m; sourceTree = "<group>"; };
+		6BAFD04D1A9D1F6B003089E2 /* AMEHNamedEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMEHNamedEntity.h; sourceTree = "<group>"; };
+		6BAFD04E1A9D1F6B003089E2 /* AMEHNamedEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMEHNamedEntity.m; sourceTree = "<group>"; };
+		6BAFD04F1A9D1F6B003089E2 /* AMEHNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMEHNote.h; sourceTree = "<group>"; };
+		6BAFD0501A9D1F6B003089E2 /* AMEHNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMEHNote.m; sourceTree = "<group>"; };
+		6BAFD0511A9D1F6B003089E2 /* AMEHNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMEHNotebook.h; sourceTree = "<group>"; };
+		6BAFD0521A9D1F6B003089E2 /* AMEHNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMEHNotebook.m; sourceTree = "<group>"; };
+		6BAFD0591A9D2598003089E2 /* _AMEHPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _AMEHPhoto.h; sourceTree = "<group>"; };
+		6BAFD05A1A9D2598003089E2 /* _AMEHPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _AMEHPhoto.m; sourceTree = "<group>"; };
+		6BAFD05B1A9D2598003089E2 /* AMEHPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMEHPhoto.h; sourceTree = "<group>"; };
+		6BAFD05C1A9D2598003089E2 /* AMEHPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMEHPhoto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,15 +144,25 @@
 		6BA497F41A8A9A600082234E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6BAFD0471A9D1F6B003089E2 /* _AMEHNamedEntity.h */,
+				6BAFD0481A9D1F6B003089E2 /* _AMEHNamedEntity.m */,
+				6BAFD0491A9D1F6B003089E2 /* _AMEHNote.h */,
+				6BAFD04A1A9D1F6B003089E2 /* _AMEHNote.m */,
+				6BAFD04B1A9D1F6B003089E2 /* _AMEHNotebook.h */,
+				6BAFD04C1A9D1F6B003089E2 /* _AMEHNotebook.m */,
+				6BAFD0591A9D2598003089E2 /* _AMEHPhoto.h */,
+				6BAFD05A1A9D2598003089E2 /* _AMEHPhoto.m */,
 				6BA497F51A8A9A7A0082234E /* AGTSimpleCoreDataStack.h */,
 				6BA497F61A8A9A7A0082234E /* AGTSimpleCoreDataStack.m */,
+				6BAFD04D1A9D1F6B003089E2 /* AMEHNamedEntity.h */,
+				6BAFD04E1A9D1F6B003089E2 /* AMEHNamedEntity.m */,
+				6BAFD04F1A9D1F6B003089E2 /* AMEHNote.h */,
+				6BAFD0501A9D1F6B003089E2 /* AMEHNote.m */,
+				6BAFD0511A9D1F6B003089E2 /* AMEHNotebook.h */,
+				6BAFD0521A9D1F6B003089E2 /* AMEHNotebook.m */,
+				6BAFD05B1A9D2598003089E2 /* AMEHPhoto.h */,
+				6BAFD05C1A9D2598003089E2 /* AMEHPhoto.m */,
 				6B5BA4EE1A8D16D400E10142 /* Model.xcdatamodeld */,
-				6BA38A8F1A9BBD3C007D5391 /* Note.h */,
-				6BA38A901A9BBD3C007D5391 /* Note.m */,
-				6BA38A8C1A9BBD3C007D5391 /* NamedEntity.h */,
-				6BA38A8D1A9BBD3C007D5391 /* NamedEntity.m */,
-				6BA38A891A9BBD3B007D5391 /* Notebook.h */,
-				6BA38A8A1A9BBD3B007D5391 /* Notebook.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -241,13 +266,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BA38A8B1A9BBD3B007D5391 /* Notebook.m in Sources */,
+				6BAFD0541A9D1F6B003089E2 /* _AMEHNote.m in Sources */,
+				6BAFD0581A9D1F6B003089E2 /* AMEHNotebook.m in Sources */,
+				6BAFD0561A9D1F6B003089E2 /* AMEHNamedEntity.m in Sources */,
+				6BAFD0571A9D1F6B003089E2 /* AMEHNote.m in Sources */,
 				6BA497DA1A8A9A260082234E /* AppDelegate.m in Sources */,
-				6BA38A8E1A9BBD3C007D5391 /* NamedEntity.m in Sources */,
+				6BAFD0531A9D1F6B003089E2 /* _AMEHNamedEntity.m in Sources */,
+				6BAFD0551A9D1F6B003089E2 /* _AMEHNotebook.m in Sources */,
+				6BAFD05D1A9D2598003089E2 /* _AMEHPhoto.m in Sources */,
 				6BA497D71A8A9A260082234E /* main.m in Sources */,
 				6BA497F71A8A9A7A0082234E /* AGTSimpleCoreDataStack.m in Sources */,
-				6BA38A911A9BBD3C007D5391 /* Note.m in Sources */,
 				6B5BA4F01A8D16D400E10142 /* Model.xcdatamodeld in Sources */,
+				6BAFD05E1A9D2598003089E2 /* AMEHPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

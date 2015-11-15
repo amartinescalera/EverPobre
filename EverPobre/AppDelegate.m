@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "AGTSimpleCoreDataStack.h"
-#import "Note.h"
-#import "Notebook.h"
+#import "AMEHNote.h"
+#import "AMEHNotebook.h"
 
 
 @interface AppDelegate ()
@@ -27,6 +27,8 @@
     
     [self trastearConDatos];
     
+    [self autoSave];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -37,11 +39,15 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
+    [self save];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    [self save];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -54,25 +60,59 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    NSLog(@"Adios mundo cruel");
 }
 
 #pragma mark - Utils
 
 -(void) trastearConDatos {
     
-    //Creamos una libreta
-    Notebook * nb = [Notebook notebookWithName:@"Mi Libreta" context:self.model.copy];
+    AMEHNotebook *novias =[AMEHNotebook notebookWithName:@"Ex-novias para el recuerdo"
+                                                 context:self.model.context];
     
-    //Crear una nota
-    Note *n = [NSEntityDescription insertNewObjectForEntityForName:@"Note"
-                                                          inManagedObjectContext:self.model.context];
+    [AMEHNote noteWithName:@"Camila Dávalos" notebook:novias conext:self.model.context];
     
-    n.creationDate = [NSDate date];
-    n.name = @"Hola Core Data";
+    AMEHNote *pampita = [AMEHNote noteWithName:@"Pampita" notebook:novias conext:self.model.context];
     
-    //Añadimos una nota a la libreta
-    n.notebook = nb;
+    //Para buscar es necesario usar una instance
+    NSFetchRequest *req = [[NSFetchRequest alloc] initWithEntityName:[AMEHNote entityName]];
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:AMEHNamedEntityAttributes.name
+                                                          ascending:YES],
+                            [NSSortDescriptor sortDescriptorWithKey:AMEHNamedEntityAttributes.modificationDate
+                                                          ascending:NO]];
+    //Buscar
+    NSError *error = nil;
     
+    NSArray *results = [self.model.context executeFetchRequest:req
+                                                         error:&error];
+    
+    if (results == nil) {
+        NSLog(@"Error al buscar");
+        
+    } else {
+        NSLog(@"Results %@", results);
+    }
+    
+    //Papmita delte
+    [self.model.context deleteObject:pampita];
+    
+    //Save
+    [self save];
+        
 }
 
+-(void) save {
+    [self.model saveWithErrorBlock:^(NSError *error) {
+        NSLog(@"Error al guardar %s \n\n %@", __func__, error);
+    }];
+}
+
+
+- (void) autoSave {
+    NSLog(@"Autoguardando.....");
+    [self save];
+    [self performSelector:@selector(autoSave)
+               withObject:nil afterDelay:2];
+}
 @end
